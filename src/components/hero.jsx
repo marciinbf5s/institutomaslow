@@ -28,7 +28,7 @@ function Hero() {
     }
   }, []);
   return (
-    <div className="relative w-full min-h-screen pt-8 sm:pt-4 text-white">
+    <div className="relative w-full min-h-[92vh] sm:min-h-screen pt-16 sm:pt-8 text-white">
       {/* Ajustes específicos para mobile */}
       <style jsx global>{`
         @media (max-width: 767px) {
@@ -58,7 +58,7 @@ function Hero() {
             flex-direction: column;
             justify-content: flex-end;
             min-height: auto;
-            padding-top: 20vh !important;
+            padding-top: 30vh !important;
           }
           .hero-title {
             font-size: 1.875rem !important;

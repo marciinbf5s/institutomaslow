@@ -28,7 +28,7 @@ function Hero() {
     }
   }, []);
   return (
-    <div className="relative w-full min-h-screen pt-32 sm:pt-16 text-white">
+    <div className="relative w-full min-h-screen pt-16 sm:pt-8 text-white">
       {/* Ajustes específicos para mobile */}
       <style jsx global>{`
         @media (max-width: 767px) {
@@ -114,7 +114,7 @@ function Hero() {
       </div>
 
       {/* Conteúdo principal */}
-      <div className="hero-content relative z-10 w-full flex flex-col items-start justify-center sm:justify-center pl-10 pr-6 sm:pl-16 md:pl-24 py-20 text-left max-w-4xl ml-8 sm:ml-16 md:ml-24 lg:ml-32 xl:ml-40 2xl:max-w-5xl 2xl:ml-48 2xl:py-32">
+      <div className="hero-content relative z-50 w-full flex flex-col items-start justify-center sm:justify-center pl-10 pr-6 sm:pl-16 md:pl-24 py-20 text-left max-w-4xl ml-8 sm:ml-16 md:ml-24 lg:ml-32 xl:ml-40 2xl:max-w-5xl 2xl:ml-48 2xl:py-32">
         <div>
           {/* Título principal */}
           <h1 className="hero-title text-4xl sm:text-5xl md:text-6xl 2xl:text-7xl font-extrabold mb-6 2xl:mb-10" style={{ lineHeight: '1.2' }}>

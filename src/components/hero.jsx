@@ -28,7 +28,7 @@ function Hero() {
     }
   }, []);
   return (
-    <div className="relative w-full min-h-screen pt-16 sm:pt-8 text-white">
+    <div className="relative w-full min-h-[90vh] sm:min-h-screen pt-16 sm:pt-8 text-white">
       {/* Ajustes específicos para mobile */}
       <style jsx global>{`
         @media (max-width: 767px) {
@@ -52,13 +52,13 @@ function Hero() {
             z-index: -10;
           }
           .hero-content {
-            padding: 0 1.5rem 5rem 1rem !important;
+            padding: 0 1.5rem 2rem 1rem !important;
             margin: 0 !important;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            min-height: 100vh;
-            padding-top: 50vh !important;
+            min-height: auto;
+            padding-top: 30vh !important;
           }
           .hero-title {
             font-size: 1.875rem !important;
@@ -100,7 +100,9 @@ function Hero() {
           />
         </div>
         {/* Versão Mobile */}
-        <div className="sm:hidden w-full h-full">
+        <div className="sm:hidden w-full h-full"
+          style={{ backgorundColor: '#00385e' }}
+        >
           <Image
             src="/fundomible.svg"
             alt="Background Mobile"

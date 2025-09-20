@@ -15,10 +15,11 @@ export default function LocalizacaoContato() {
   const areasAtendimento = [
     'Psicologia',
     'Nutrição',
-    'Psiquiatria',
-    'Fisioterapia',
-    'Fonoaudiologia',
-    'Terapia Ocupacional',
+    'Farmácia Estética',
+    'Neuropsicopedagogia',
+    'Música',
+    'Nutricionismo',
+    'Massoterapia',
     'Outro'
   ];
 
@@ -35,7 +36,7 @@ export default function LocalizacaoContato() {
     // Aqui você pode adicionar a lógica para enviar o formulário
     console.log('Dados do formulário:', formData);
     alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-    setFormData({ 
+    setFormData({
       nome: '',
       telefone: '',
       dataNascimento: '',
@@ -55,7 +56,7 @@ export default function LocalizacaoContato() {
             <span className="absolute bottom-0 left-0 w-full h-1 bg-yellow-500 rounded-full"></span>
           </h2>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
           {/* Mapa */}
           <div>
@@ -64,15 +65,15 @@ export default function LocalizacaoContato() {
               <span>Onde estamos</span>
             </div>
             <div className="h-80 md:h-96 w-full rounded-lg border-2 border-yellow-500 overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.400647867138!2d-43.17768238451795!3d-22.91185364355208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzQyLjciUyA0M8KwMTAnNDkuNyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              title="Localização da Clínica"
-            ></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.400647867138!2d-43.17768238451795!3d-22.91185364355208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzQyLjciUyA0M8KwMTAnNDkuNyJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                title="Localização da Clínica"
+              ></iframe>
             </div>
           </div>
 
@@ -80,7 +81,7 @@ export default function LocalizacaoContato() {
             {/* Formulário */}
             <div className="bg-white p-4 sm:p-6 border-2 border-blue-500 rounded-lg shadow-md md:h-full">
               <h3 className="text-lg sm:text-xl font-semibold text-[#00385e] mb-3 sm:mb-4">Envie-nos uma mensagem</h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-2 sm:space-y-4">
                 <div>
                   <label htmlFor="nome" className="block text-sm font-medium text-gray-700 mb-1">
@@ -112,7 +113,7 @@ export default function LocalizacaoContato() {
                       className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0c92ed] focus:border-transparent"
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="telefone" className="block text-sm font-medium text-gray-700 mb-1">
                       Telefone *
@@ -163,7 +164,7 @@ export default function LocalizacaoContato() {
                     className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:ring-2 focus:ring-[#0c92ed] focus:border-transparent"
                   ></textarea>
                 </div>
-                
+
                 <p className="text-xs text-gray-500 mt-2">
                   * Campos obrigatórios
                 </p>
